@@ -1,0 +1,190 @@
+:root {
+  --dark: #010203;
+  --light: #ffff;
+  --pop-of-color: #ffcc33;
+  --gray: rgb(37, 36, 36);
+}
+.home {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dark);
+  font-weight: 300;
+}
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.top-nav a {
+  padding: 2rem;
+  text-decoration: none;
+  color: var(--light);
+  font-size: 2em;
+}
+.box {
+  padding: 5.5rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 12px solid var(--light);
+  border-style: ridge;
+  background-color: var(--dark);
+  color: var(--light);
+  animation: border-flicker 4s linear infinite;
+}
+.home p {
+  line-height: 1em;
+  text-align: center;
+  font-size: 6.5em;
+  animation: text-flicker 5s linear infinite;
+}
+.home p:hover {
+  color: var(--pop-of-color);
+}
+a:hover {
+  color: var(--pop-of-color);
+  font-weight: 500;
+}
+/*from code pen @KevinOgden*/
+@keyframes text-flicker {
+  0% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px var(--pop-of-color);
+  }
+
+  2% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px var(--pop-of-color);
+  }
+  8% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px var(--pop-of-color);
+  }
+  9% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px var(--pop-of-color);
+  }
+  12% {
+    opacity: 0.1;
+    text-shadow: 0px 0px var(--pop-of-color);
+  }
+  20% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px var(--pop-of-color);
+  }
+  25% {
+    opacity: 0.3;
+    text-shadow: 0px 0px 29px var(--pop-of-color);
+  }
+  30% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px var(--pop-of-color);
+  }
+
+  70% {
+    opacity: 0.7;
+    text-shadow: 0px 0px 29px var(--pop-of-color);
+  }
+
+  72% {
+    opacity: 0.2;
+    text-shadow: 0px 0px 29px var(--pop-of-color);
+  }
+
+  77% {
+    opacity: 0.9;
+    text-shadow: 0px 0px 29px var(--pop-of-color);
+  }
+  100% {
+    opacity: 0.9;
+    text-shadow: 0px 0px 29px var(--pop-of-color);
+  }
+}
+@keyframes border-flicker {
+  0% {
+    opacity: 0.1;
+    -webkit-box-shadow: 0px 0px 78px 4px var(--pop-of-color);
+    -moz-box-shadow: 0px 0px 78px 4px var(--pop-of-color);
+    box-shadow: 0px 0px 78px 4px var(--pop-of-color);
+  }
+  2% {
+    opacity: 1;
+    -webkit-box-shadow: 0px 0px 78px 4px var(--pop-of-color);
+    -moz-box-shadow: 0px 0px 78px 4px var(--pop-of-color);
+    box-shadow: 0px 0px 78px 4px var(--pop-of-color);
+  }
+  4% {
+    opacity: 0.1;
+    -webkit-box-shadow: 0px 0px 78px 4px var(--pop-of-color);
+    -moz-box-shadow: 0px 0px 78px 4px var(--pop-of-color);
+    box-shadow: 0px 0px 78px 4px var(--pop-of-color);
+  }
+
+  8% {
+    opacity: 1;
+    -webkit-box-shadow: 0px 0px 78px 4px var(--pop-of-color);
+    -moz-box-shadow: 0px 0px 78px 4px var(--pop-of-color);
+    box-shadow: 0px 0px 78px 4px var(--pop-of-color);
+  }
+  70% {
+    opacity: 0.7;
+    -webkit-box-shadow: 0px 0px 78px 4px var(--pop-of-color);
+    -moz-box-shadow: 0px 0px 78px 4px var(--pop-of-color);
+    box-shadow: 0px 0px 78px 4px var(--pop-of-color);
+  }
+  100% {
+    opacity: 1;
+    -webkit-box-shadow: 0px 0px 78px 4px var(--pop-of-color);
+    -moz-box-shadow: 0px 0px 78px 4px var(--pop-of-color);
+    box-shadow: 0px 0px 78px 4px var(--pop-of-color);
+  }
+}
+@keyframes letter-flicker {
+  0% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px var(--light);
+  }
+  2% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px var(--light);
+  }
+  4% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px var(--light);
+  }
+
+  19% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px var(--light);
+  }
+  21% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px var(--light);
+  }
+  23% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px var(--light);
+  }
+
+  80% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px var(--light);
+  }
+  83% {
+    opacity: 0.4;
+    text-shadow: 0px 0px 29px var(--light);
+  }
+  87% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px var(--light);
+  }
+}
+/*-------------------------------------------------*/
+/*for mobile devices*/
+@media screen and (max-width: 480px) {
+  .top-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}

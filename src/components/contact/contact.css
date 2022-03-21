@@ -1,0 +1,44 @@
+:root {
+  --dark: #010203;
+  --light: #ffff;
+  --pop-of-color: #ffcc33;
+  --gray: rgb(37, 36, 36);
+}
+.contact-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
+  color: var(--light);
+  text-align: center;
+}
+.contact-title {
+  align-content: center;
+  margin-bottom: 0.7rem;
+}
+.contact-desc {
+  max-width: 30em;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.phone,
+.email {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.phone-icon,
+.email-icon {
+  margin-right: 0.2rem;
+}
+.email-link {
+  text-align: center;
+}
+#my-mail {
+  text-decoration: none;
+  color: var(--pop-of-color);
+}
